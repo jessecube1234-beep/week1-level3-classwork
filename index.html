@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Node and NPM</title>
+
+    <!-- Bootstrap Styles-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- My Styles-->
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    <h1>Learning Node && NPM</h1>
+    <h1 class="text-center">Learning Node & NPM</h1>
+
+    <form class="mainForm d-flex justify-content-center flex-column align-items-center mt-4 mx-auto gap-3"
+        id="mainForm">
+        <div class="mainForm__input">
+            <label for="pokemonSearch" class="form-label">Search a Pokemon with the PokeApi by Name or Id</label>
+            <input type="text" name="pokemonSearch" id="pokemonSearchInput" class="form-control" required>
+        </div>
+
+        <button class="mainForm__submit btn btn-primary" id="formSubmit" type="submit">
+            Search Pokemon
+        </button>
+    </form>
+
+    <div id="content" class="mt-4 d-flex w-75 mx-auto align-items-center justify-content-center">
+        <p class="text-center">
+            Please search for a pokemon to display its information here!
+        </p>
+    </div>
+
+    <!-- Scripts of the dependencies -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./node_modules/lodash/lodash.min.js"></script>
+
+    <!-- Include our main.js file here -->
+    <script src="./main.js" type="module"></script>
 </body>
+
 </html>

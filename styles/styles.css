@@ -13,23 +13,19 @@
     border-radius: 15px;
     background: #fff;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
 }
 
 /* Larger Pokémon sprite */
 .pokemon-card img {
-    width: 160px;   /* Increased from 120px → now larger */
     margin-bottom: 15px;
+    width: 200px !important;  
+    height: auto !important;   
+    image-rendering: pixelated;
 }
 
 /* Text styling */
 .pokemon-card p {
     margin: 10px 0;
     font-size: 16px;
-}
-
-.pokemon-card img {
-    width: 200px !important;  
-    height: auto !important;   
-    image-rendering: pixelated; 
 }

@@ -14,7 +14,7 @@ async function getPokemonAPI(pokemonName) {
     } catch (error) {
         return {
             success: false,
-            error: error
+            error
         };
     }
 }
@@ -32,7 +32,7 @@ async function getAbilitiesAPI() {
     } catch (error) {
         return {
             success: false,
-            error: error
+            error
         };
     }
 }
@@ -50,7 +50,7 @@ async function getItemAPI(itemId) {
     } catch (error) {
         return {
             success: false,
-            error: error
+            error
         };
     }
 }
